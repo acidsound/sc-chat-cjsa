@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title sc-chat-cjs
+    link(href='//fonts.googleapis.com/css?family=Roboto:100,300', rel='stylesheet', type='text/css')
+    link(rel='icon', type='image/png', href='/favicon.ico')
+    link(rel='stylesheet', href='https://cdn.rawgit.com/acidsound/Tle-CSS/master/dist/tle.css')
+    script(type='text/javascript', src='socketcluster.js')
+    script(type='text/javascript', src='client.js')
+  body
+    form(action='#', name='messageForm')
+      fieldset
+        label(for='username' class='한줄') username
+        input#username(type='text', placeholder='type your name')
+        label(for='message' class='한줄') Message
+        input#message(type='text', placeholder='tell me something...')
+        #imageholder
+        button Send
+    dl#messages
